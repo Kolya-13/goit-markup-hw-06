@@ -533,8 +533,7 @@ position: relative;
 .team .team-text {
     padding-top: 30px;
     padding-bottom: 30px;
-    text-align: center;
-    
+    text-align: center;  
 }
 
 .item-name {
@@ -566,7 +565,6 @@ position: relative;
     margin-left: 32px;
 }
 
-
 .social-icons-item + .social-icons-item {
     margin-left: 10px;  
 }
@@ -593,7 +591,6 @@ position: relative;
   background-color: var(--accent-color);
   transition: var(--animation);
 }
-
 
 /* =================== END TEAM ======================== */ 
 
@@ -732,7 +729,6 @@ transition: var(--animation);
     transition: color var(--animation), background-color var(--animation), box-shadow var(--animation);
 }
 
-
 .portfolio-button-item:hover,
 .portfolio-button-item:focus {
     color: white;
@@ -756,7 +752,6 @@ transition: var(--animation);
     transition: box-shadow var(--animation);
 }
 
-
 .link-card {
     text-decoration: none;
     display: block;
@@ -769,7 +764,6 @@ transition: var(--animation);
     -webkit-box-shadow: 6px 14px 23px 1px rgba(0,0,0,0.21);
     -moz-box-shadow: 6px 14px 23px 1px rgba(0,0,0,0.21);
     transition: var(--animation);
-
 }
 
 .description {
@@ -836,7 +830,7 @@ transition: var(--animation);
 .portfolio-img:hover .project-overlay{
     transform: translateY(0);
     display: block;
-    }
+}
 
 /* ---------------- end portfolio owerlay-------------------- */
 
@@ -869,8 +863,6 @@ transition: var(--animation);
 .footer-list {
     padding-top: 20px;
 }
-
-
 
 .footer-logotype {
     font-family: var(--logo-font);
@@ -908,12 +900,10 @@ transition: var(--animation);
     text-decoration: none;
 }
 
-
 .footer-list-link-maps:hover,
 .footer-list-link-maps:focus {
     color: var(--accent-color);
     transition: var(--animation);
-
 }
 
 .footer-list-link,
@@ -925,7 +915,6 @@ transition: var(--animation);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-
 }
 
 .footer-list-link:focus,
@@ -933,13 +922,11 @@ transition: var(--animation);
     color: var(--accent-color);
     transition: var(--animation);
     transition: color var(--animation);
-
 }
 
 .footer-addres {
     font-style: normal;
 }
-
 
 .social-connect {
     flex-basis: calc((50% - 45px) / 2);
@@ -972,7 +959,6 @@ transition: var(--animation);
   fill: var(--light-text-color);
   background-color: var(--accent-color);
   transition: var(--animation);
-
 }
 
 /* --------------------- subscription ----------------------- */
