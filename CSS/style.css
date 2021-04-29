@@ -1,4 +1,4 @@
-/* ======= GENERAL STYLE ======= */
+/* ==================== GENERAL STYLE ====================== */
 
 html {
     box-sizing: border-box;
@@ -27,12 +27,10 @@ p {
     letter-spacing: 0.03em;
 }
 
-
 ul {
     padding: 0px;
     margin: 0px;
 }
-  
 
 img {
     display: block;
@@ -56,7 +54,7 @@ img {
 .flexbox {
     display: flex;
     justify-content: space-between;
-  }
+}
 
 .container {
   width: 1200px;
@@ -65,13 +63,12 @@ img {
   margin: auto;
 }
 
-
 .grid {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
-  }
+}
   
   .grid-item {
   flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
@@ -79,13 +76,12 @@ img {
   margin-top: 30px;
   }
 
-
 .priorities-list-item {
     --grid-item: 4;
 } 
-/* ======= END GENERAL STYLE ======= */
+/* ============== END GENERAL STYLE ====================== */
 
-/* ======= VARIABLE ======= */
+/* =================== VARIABLE ========================== */
 
 :root {
     --text-font: "Roboto", sans-serif;
@@ -100,9 +96,9 @@ img {
     --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ======= END VARIABLE ======= */
+/* ================ END VARIABLE ========================= */
 
-/* ======= BODY ======= */
+/* ===================== BODY ============================ */
 
 body {
     margin-left: auto;
@@ -111,9 +107,9 @@ body {
     color: #757575;
     } 
 
-/* ======= END BODY ======= */
+/* ===================== END BODY ========================== */
 
-/* ======= HEADER ======= */
+/* ====================== HEADER =========================== */
 
 header {
     border-bottom: solid 1px #ECECEC;
@@ -132,7 +128,6 @@ header {
     align-items: center;
     margin-right: auto;
 } 
-
 
 .logotype {
     font-family: var(--logo-font);
@@ -156,7 +151,6 @@ header {
     display: flex;
 } 
 
-
 .navigation-list-item {
     display: block;
     margin-right: 50px;
@@ -178,7 +172,7 @@ header {
     color: #212121;
     text-decoration: none;
     transition: var(--animation);
-   }
+}
 
 .main-list .link{
     transition: var(--animation);
@@ -211,7 +205,6 @@ position: relative;
     background-color: var(--accent-color);
 } 
 
-
 .navigation-list-link:hover,
 .navigation-list-link:focus {
     color: var(--accent-color);
@@ -229,12 +222,11 @@ position: relative;
     text-decoration: none;
     }
 
-    
  .contact-link {
     list-style: none;
     align-items: center;
     margin-left: auto;
-  }
+}
 
 .header-contact:not(:last-child) {
     margin-right: 50px;
@@ -246,7 +238,7 @@ position: relative;
     transition: var(--animation);
     }
 
-/* mail-icon */
+/* ---------------------- mail-icon --------------------- */
 
 .mail-icon {
     width: 16px; 
@@ -255,11 +247,11 @@ position: relative;
     fill: currentColor;
 }
 
-/* end mail-icon */
+/* -------------------- end mail-icon ------------------- */
 
-/* ======= END HEADER ======= */
+/* ===================== END HEADER ===================== */
 
-/* ======= TITLE ======= */
+/* ======================== TITLE ======================= */
 
 .title {
     font-family: var(--title-font);
@@ -271,10 +263,9 @@ position: relative;
     color: var(--text-color);
 }
 
-/* ======= END TITLE ======= */
+/* ===================== END TITLE ======================= */
 
-
-/* ======= HERO ======= */
+/* ======================== HERO ========================= */
 
 .hero {
     max-width: 1600px;
@@ -299,7 +290,6 @@ position: relative;
     margin-right: auto;
     margin-left: auto;
 }
-
 
 .hero-title {
     align-items: center;
@@ -333,7 +323,7 @@ position: relative;
     margin-right: auto;
     cursor: pointer;
     transition: background-color var(--animation);
-  }
+}
 
 .button:hover,
 .button:focus {
@@ -341,66 +331,9 @@ position: relative;
     background-color: #188CE8;
 }
 
-/* modal */
+/* ======================= END HERO ====================== */
 
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
-
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.2);
-    opacity: 1;
-    transition: opacity var(--accent-color);
-}
-
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.9);
-}
-
-.modal {
-    position: absolute;
-    display: flex;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    min-width: 528px;
-    min-height: 581px;
-    background-color: var(--light-text-color);
-    transition: transform var(--accent-color);
-    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
-    border-radius: 4px;
-    transition: var(--animation);
-}
-
-.close-button {
-    cursor: pointer;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    background-color: var(--light-text-color);
-    border-radius: 50%;
-    border: 1px solid rgba(0,0,0,0.1);
-    color: rgb(0,0,0);
-}
-
-/* end modal */
-
-/* ======= END HERO ======= */
-  
-
-/* ======= PRIORITIES ======= */ 
+/* ====================== PRIORITIES ===================== */ 
 
 .priorities {
     padding-top: 94px;
@@ -415,7 +348,6 @@ position: relative;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-   
 }
 
 .container-priorities .title {
@@ -427,7 +359,6 @@ position: relative;
    display: flex;
    justify-content: space-between   
 }
-
 
 .priorities-list-title {
     font-family: var(--title-font);
@@ -451,7 +382,7 @@ position: relative;
     margin-top: 10px;
 }
 
-/* icons */
+/* ----------------------- icons -----------------------*/
 
 .details::before{
     display: inline-flex;
@@ -509,11 +440,11 @@ position: relative;
     border-radius: 4px;
   }
 
-/* end icons */
+/* ---------------------end icons ----------------------*/
 
-/* ======= END PRIORITIES ======= */ 
+/* =================== END PRIORITIES ================= */ 
 
-/* ======= ABOUT ======= */ 
+/* ========================= ABOUT ==================== */ 
 .about {
     padding-bottom: 94px;
     margin-right: auto;
@@ -572,9 +503,9 @@ position: relative;
     background-color: rgba(47,48,58,0.8);
   }
 
-/* ======= END ABOUT ======= */ 
+/* =================== END ABOUT ========================= */ 
 
-/* ======= TEAM ======= */
+/* ======================= TEAM ========================== */
 
 .team {
     padding-top: 94px;
@@ -664,9 +595,9 @@ position: relative;
 }
 
 
-/* ======= END TEAM ======= */ 
+/* =================== END TEAM ======================== */ 
 
-/* ======= CLIENTS ======= */ 
+/* =================== CLIENTS ========================= */ 
 
 .company {
     padding-top: 94px;
@@ -750,9 +681,9 @@ border-color: var(--accent-color);
 transition: var(--animation);
 }
 
-/* ======= END CLIENTS ======= */ 
+/* ================== END CLIENTS ===================== */ 
 
-/* ======= PORTFOLIO ======= */
+/* =================== PORTFOLIO ===================== */
 
 .portfolio {
     padding-top: 94px;
@@ -870,7 +801,7 @@ transition: var(--animation);
     line-height: 30px;
 }
 
-/* portfolio awerlay */
+/* ----------------- portfolio awerlay ---------------------*/
 
 .project-thumb {
     position: relative;
@@ -907,13 +838,11 @@ transition: var(--animation);
     display: block;
     }
 
+/* ---------------- end portfolio owerlay-------------------- */
 
-/* end portfolio owerlay */
+/* ===================== END PORTFOLIO ====================== */
 
-
-/* ======= END PORTFOLIO ======= */
-
-/* ======= FOOTER ======= */
+/* ========================= FOOTER ========================= */
 
 .footer {
     padding-top: 60px;
@@ -924,13 +853,13 @@ transition: var(--animation);
 }
 
 .container-footer {
-    box-sizing: content-box;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
     display: flex;
+    justify-content: space-between;
 }
 
 .information {
@@ -1046,4 +975,143 @@ transition: var(--animation);
 
 }
 
-/* ======= END FOOTER ======= */
+/* --------------------- subscription ----------------------- */
+
+.subscription {
+    flex-basis: calc(50% - 15px);
+}
+
+.social-connect, .subscription {
+    padding-top: 12px;
+}
+
+.social-connect .footer-connect, .subscription .connect {
+    display: flex;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--light-text-color);
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.subs-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subs-form:not(:placeholder-shown) > .email {
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: var(--light-text-color);
+}
+
+.subs-form .email {
+    width: 100%;
+    height: 50px;
+    padding-left: 16px;
+    margin-right: 12px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.submit {
+    display: inline-flex;
+    cursor: pointer;
+    min-width: 200px;
+    height: 50px;
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    border: none;
+    color: var(--light-text-color);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+[type=reset], [type=submit], button {
+    -webkit-appearance: button;
+}
+
+button, select {
+    text-transform: none;
+}
+
+.subs-form .submit::after {
+    display: flex;
+    content: "";
+    margin-left: 10px;
+    min-width: 24px;
+    min-height: 24px;
+    background-image: url(../Images/svg/icon-send.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* ----------------- end subscription -------------------- */
+
+/* =================== END FOOTER ============================ */
+
+/* ----------------------- modal --------------------------*/
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity var(--accent-color);
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.modal {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    min-width: 528px;
+    min-height: 581px;
+    background-color: var(--light-text-color);
+    transition: transform var(--accent-color);
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 4px;
+    transition: var(--animation);
+}
+
+.close-button {
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: var(--light-text-color);
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.1);
+    color: rgb(0,0,0);
+}
+
+/* ----------------------end modal-------------------------- */
