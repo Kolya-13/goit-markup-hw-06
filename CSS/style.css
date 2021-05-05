@@ -1233,17 +1233,6 @@ font-size: 12px;
     overflow: hidden;
 }
 
-.checkbox:checked + .checkbox-icon{
-    background-color: var(--accent-color);
-    background-image: url(../images/icons/check.svg);
-    background-size: contain;
-    background-origin: border-box;
-    border-color: var(--accent-color);
-    display: inline-block;
-    }
-
-
-
 .checkbox-icon {
     display: inline-block;
     margin-right: 7px;
@@ -1256,7 +1245,7 @@ font-size: 12px;
 
 .checkbox:checked + .checkbox-icon{
     background-color: var(--accent-color);
-    background-image: url(../images/icons/check.svg);
+    background-image: url(../Images/svg/check.svg);
     background-size: contain;
     background-origin: border-box;
     border-color: var(--accent-color);
