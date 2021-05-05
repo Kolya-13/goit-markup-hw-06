@@ -90,6 +90,8 @@ img {
     --accent-color: #2196F3;
     --primary-white-color: #F5F4FA;
     --light-text-color: #FFFFFF;
+    --dark-bg-color: #2F303A;
+    --light-bg-color: #ECECEC;
     --text-color: #212121;
     --team-section-color: #F5F4FA;
     --filter-button-color:#F5F4FA;
@@ -1103,6 +1105,12 @@ button, select {
     transition: color var(--animation);
 }
 
+.close-button:hover,
+.close-button:focus{
+  color: var(--accent-color);
+}
+
+
 .modal-title {
     display: flex;
     justify-content: center;
@@ -1118,6 +1126,11 @@ button, select {
     margin: 0;
     margin-bottom: 12px;
 }
+
+.form-field .form-label{
+    display: flex;
+ flex-direction: column;
+  }
 
 .form-field:not(:last-of-type) {
     margin-bottom: 10px;
@@ -1140,7 +1153,6 @@ label {
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: var(--main-text-color);
-    /* поміняй шрифт */
 }
 
 .form-input {
@@ -1150,6 +1162,7 @@ label {
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
+    transition: var(--animation);
     transition: border var(--animation), outline var(--animation), color var(--animation);
 }
 
@@ -1170,12 +1183,39 @@ button, input, optgroup, select, textarea {
     transition: fill var(--animation);
 }
 
+.form-label{
+ position: relative;
+  }
+
+.form-field:focus-within .form-icon{
+ fill: var(--accent-color);
+   }  
+
+.form-field:focus-within .form-input{
+ border: 1px solid var(--accent-color);
+outline: var(--accent-color);
+  color: var(--accent-color);
+  }
+
 .form-input.comment {
     height: 120px;
     resize: none;
     padding: 12px 16px;
     margin-bottom: 20px;
 }
+
+.comment::placeholder{
+font-size: 12px;
+ line-height: 14px;
+ letter-spacing: 0.01em;
+ color:rgba(117, 117, 117, 0.5);
+  }
+ 
+.comment:not(:placeholder-shown) {
+font-size: 12px;
+ line-height: 14px;
+ letter-spacing: 0.01em;
+ }
 
 .custom-checkbox .label {
     align-items: center;
@@ -1193,6 +1233,17 @@ button, input, optgroup, select, textarea {
     overflow: hidden;
 }
 
+.checkbox:checked + .checkbox-icon{
+    background-color: var(--accent-color);
+    background-image: url(../images/icons/check.svg);
+    background-size: contain;
+    background-origin: border-box;
+    border-color: var(--accent-color);
+    display: inline-block;
+    }
+
+
+
 .checkbox-icon {
     display: inline-block;
     margin-right: 7px;
@@ -1203,9 +1254,19 @@ button, input, optgroup, select, textarea {
     transition: background-color var(--animation), background-image var(--animation);
 }
 
+.checkbox:checked + .checkbox-icon{
+    background-color: var(--accent-color);
+    background-image: url(../images/icons/check.svg);
+    background-size: contain;
+    background-origin: border-box;
+    border-color: var(--accent-color);
+    display: inline-block;
+    }
+
 .agreement-link {
     display: block;
     margin-left: 3px;
+    color: #2196F3;
 }
 
 
@@ -1220,6 +1281,10 @@ button, input, optgroup, select, textarea {
     color: #757575;
 }
 
+.agreement-link a{
+    color: var(--accent-color);
+    }
+
 .modal-submit {
     display: flex;
     justify-content: center;
@@ -1229,5 +1294,11 @@ button, input, optgroup, select, textarea {
     padding: 0;
     transition: var(--animation);
 }
+
+.custom-checkbox .label{
+    align-items: center;
+    justify-content: center;
+  }
+  
 
 /* ----------------------end modal-------------------------- */
